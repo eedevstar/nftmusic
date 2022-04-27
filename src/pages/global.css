@@ -1,0 +1,49 @@
+body {
+  font-family: 'Nexa', '"Helvetica Neue"', 'Arial', 'sans-serif';
+  overflow-x: hidden;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Nexa";
+  src: url("/fonts/Nexa-Light.otf") format("opentype");
+}
+
+.date_picker{
+  position: relative;
+}
+
+.date_picker input{
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.28);
+  padding-bottom: 5px;
+  width: 100%;
+  background: transparent;
+}
+.date_picker input:hover{
+  color: rgba(0, 0, 0, 0.9);
+}
+.date_picker::after{
+  content: "";
+  background: url(/images/icons/bottom-arrow.svg) no-repeat;
+  position: absolute;
+  right: 0px;
+  top: 7px;
+  width: 14px;
+  height: 9px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
